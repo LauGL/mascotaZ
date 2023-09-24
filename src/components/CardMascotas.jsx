@@ -1,4 +1,4 @@
-const CardApp = ({ item }) => {
+const CardMascotas = ({ item }) => {
   return (
     <div className="col-12 col-md">
       <div className="card h-100">
@@ -7,6 +7,7 @@ const CardApp = ({ item }) => {
           <div className="card-body">
             <p className="text-muted fs-3 fs-md-2">{item.nombre}</p>
             <p className="text-muted">{item.raza}</p>
+            <p className="text-muted fs-3 fs-md-2">{item.historia}</p>
           </div>
         </div>
       </div>
@@ -14,8 +15,8 @@ const CardApp = ({ item }) => {
   );
 };
 
-CardApp.propTypes = {
-  item: CardApp.object,
+CardMascotas.propTypes = {
+  item: CardMascotas.object,
 };
 
-export default CardApp;
+export default CardMascotas;
