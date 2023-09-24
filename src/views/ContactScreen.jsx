@@ -8,7 +8,7 @@ const ContactScreen = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const handleChage = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
 
@@ -35,7 +35,7 @@ const ContactScreen = () => {
                 className="form-control"
                 name="email"
                 value={formValues.email}
-                onChange={handleChange}
+                onChange={handleChage}
                 placeholder="ejemplo@ejemplo.com"
               />
             </div>
@@ -46,7 +46,7 @@ const ContactScreen = () => {
                 className="form-control"
                 name="password"
                 value={formValues.password}
-                onChange={handleChange}
+                onChange={handleChage}
                 placeholder="Mínimo 8 caracteres"
                 minLength="8"
                 maxLength="12"
